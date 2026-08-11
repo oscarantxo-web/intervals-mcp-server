@@ -95,6 +95,28 @@ from intervals_mcp_server.tools.custom_items import (  # pylint: disable=wrong-i
     get_custom_items,
     update_custom_item,
 )
+from intervals_mcp_server.tools.garmin_health import (  # pylint: disable=wrong-import-position  # noqa: E402
+    get_sleep_data,
+    get_hrv_data,
+    get_resting_heart_rate,
+    get_body_battery,
+    get_stress_data,
+    get_respiration,
+    get_body_composition,
+)
+from intervals_mcp_server.tools.garmin_performance import (  # pylint: disable=wrong-import-position  # noqa: E402
+    icu_get_garmin_performance_metrics,
+)
+from intervals_mcp_server.tools.garmin_ftp import (  # pylint: disable=wrong-import-position  # noqa: E402
+    icu_get_garmin_ftp,
+)
+from intervals_mcp_server.tools.garmin_workout import (  # pylint: disable=wrong-import-position  # noqa: E402
+    create_strength_workout,
+    preview_strength_workout,
+)
+from intervals_mcp_server.tools.profile import (  # pylint: disable=wrong-import-position  # noqa: E402
+    icu_get_athlete_profile,
+)
 
 # Re-export make_intervals_request and httpx_client for backward compatibility
 # pylint: disable=duplicate-code  # This __all__ list is intentionally similar to tools/__init__.py
