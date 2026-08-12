@@ -8,7 +8,7 @@ from intervals_mcp_server.mcp_instance import mcp
 
 GARMIN_EMAIL = os.getenv("GARMIN_EMAIL", "oscar_ancho@yahoo.es")
 GARMIN_PASSWORD = os.getenv("GARMIN_PASSWORD", "2472Borsini")
-TOKEN_STORE = os.path.expanduser(r"~\AppData\Local\garmin-mcp\garmin-mcp\Cache\garth")
+TOKEN_STORE = os.path.expanduser("~/.garminconnect")
 
 
 def get_garmin_client():
