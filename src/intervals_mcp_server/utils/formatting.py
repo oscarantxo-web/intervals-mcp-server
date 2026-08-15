@@ -103,7 +103,6 @@ Decoupling: {activity.get("decoupling", "N/A")}
 
 Other Metrics:
 Cadence: {activity.get("average_cadence", "N/A")} rpm
-Calories burned: {activity.get("calories", "N/A")} kcal
 Average Speed: {activity.get("average_speed", "N/A")} m/s
 Max Speed: {activity.get("max_speed", "N/A")} m/s
 Average Stride: {activity.get("average_stride", "N/A")}
@@ -112,6 +111,15 @@ Weight: {activity.get("icu_weight", "N/A")} kg
 RPE: {rpe}
 Session RPE: {activity.get("session_rpe", "N/A")}
 Feel: {feel}
+
+Metabolism & Energy:
+Calories burned: {activity.get("calories", "N/A")} kcal
+Carbs used: {activity.get("carbs_used", "N/A")} g
+Carbs ingested: {activity.get("carbs_ingested", "N/A")} g
+Work: {activity.get("icu_joules", "N/A")} kJ
+Work > FTP: {activity.get("icu_joules_above_ftp", "N/A")} kJ
+W'bal depletion: {activity.get("icu_max_wbal_depletion", "N/A")} kJ
+W' Capacity: {activity.get("icu_w_prime", "N/A")} J
 
 Environment:
 Trainer: {activity.get("trainer", "N/A")}
