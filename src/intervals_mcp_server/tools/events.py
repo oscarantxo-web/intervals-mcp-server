@@ -34,15 +34,17 @@ def _prepare_event_data(  # pylint: disable=too-many-arguments,too-many-position
     Many arguments are required to match the Intervals.icu API event structure.
     """
     resolved_workout_type = resolve_activity_type(name, workout_type)
-    return {
+    data = {
         "start_date_local": start_date + "T00:00:00",
         "category": "WORKOUT",
         "name": name,
-        "description": str(workout_doc) if workout_doc else None,
         "type": resolved_workout_type,
         "moving_time": moving_time,
         "distance": distance,
     }
+    if workout_doc:
+        data["workout_doc"] = workout_doc
+    return data
 
 
 def _handle_event_response(
