@@ -87,19 +87,23 @@ Elevation Loss: {activity.get("total_elevation_loss", "N/A")} meters
 Power Data:
 Average Power: {activity.get("avgPower", activity.get("icu_average_watts", activity.get("average_watts", "N/A")))} watts
 Weighted Avg Power: {activity.get("icu_weighted_avg_watts", "N/A")} watts
+Aerobic Threshold (AeT Power): {activity.get("AeT", "N/A")} watts
+FTP (AnT / LT2): {activity.get("icu_ftp", "N/A")} watts
+Power at VO2Max (Pvo2max): {activity.get("Pvo2max", "N/A")} watts
 Training Load: {activity.get("trainingLoad", activity.get("icu_training_load", "N/A"))}
-FTP: {activity.get("icu_ftp", "N/A")} watts
 Kilojoules: {activity.get("icu_joules", "N/A")}
 Intensity: {activity.get("icu_intensity", "N/A")}
+Efficiency Factor (EF): {activity.get("icu_efficiency_factor", "N/A")}
 Power:HR Ratio: {activity.get("icu_power_hr", "N/A")}
 Variability Index: {activity.get("icu_variability_index", "N/A")}
 
 Heart Rate Data:
 Average Heart Rate: {activity.get("avgHr", activity.get("average_heartrate", "N/A"))} bpm
 Max Heart Rate: {activity.get("max_heartrate", "N/A")} bpm
-LTHR: {activity.get("lthr", "N/A")} bpm
+Aerobic Threshold HR (AeTHR): {activity.get("AeTHR", "N/A")} bpm
+LTHR (Umbral Lactato): {activity.get("lthr", "N/A")} bpm
 Resting HR: {activity.get("icu_resting_hr", "N/A")} bpm
-Decoupling: {activity.get("decoupling", "N/A")}
+Aerobic Decoupling (Pwr:HR): {activity.get("decoupling", "N/A")}%
 
 Other Metrics:
 Cadence: {activity.get("average_cadence", "N/A")} rpm
